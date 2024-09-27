@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadarBook</title>
+    <link rel="icon" href="icono.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo_principal" src="Imagenes/logoHeader.png"></img>
+        <div id="titulo_header">
+            <h1 id="titulo">RadarBook</h1>
+            <h2 id="subtitulo">el mejor comparador de libros</h2>
+        </div>
+        <nav id="menu_header">
+            <ul>
+                <li class="opcion_menu"><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    	<button id="toggleButton" aria-label="Minimizar/Maximizar formulario">-</button>
+        <form id="searchForm" action="/ServletForm" method="GET">
+        	<label>
+        		Búsqueda por Nombre:
+            	<input type="text" name="searchNameInput" id="searchNameInput" placeholder="Ingrese título" aria-label="Buscar por título">
+            </label>
+            <br>
+           <label>
+            	Búsqueda por ISBN:
+            	<input type="text" name="searchISBNInput" id="searchISBNInput" placeholder="Ingrese ISBN" aria-label="Buscar ISBN">
+            </label>
+            <button type="submit" value="enviarInfo">Buscar</button>
+        </form>
+    </main>
+    <footer>
+            <p>&copy; 2024 RadarBook SL</p>
+            <p><a href="Documentacion.pdf">¿Cómo se hizo?</a></p>
+            <p><a href="contacto.html">¿Quiénes somos?</a></p>
+    </footer>
+    <script src="toggleForm.js"></script>
+</body>
+</html>
